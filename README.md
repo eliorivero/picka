@@ -5,6 +5,8 @@ Font Icon Picker plugin for jQuery
 
 A lightweight font icon picker simple and straightforward. Created specially for WordPress admin environments but can be used anywhere.
 
+Demo http://demo.queryloop.com/picka/
+
 The demo uses icons from FontAwesome
 http://fontawesome.io/icons/
 
