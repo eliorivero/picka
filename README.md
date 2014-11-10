@@ -89,3 +89,31 @@ $picker .= '</div>';
 but you can also use wp_localize_script() and pass the labels in an object when calling the plugin in JavaScript.
 
 For more initialization and usage examples see the demo link.
+
+
+Events
+---
+
+'iconpickershow.queryloop': triggered when the icon list is shown. Receives the display mode as parameter.
+
+'iconselected.queryloop': triggered when an icon is picked. Receives the icon class or code according to the selected saving mode as parameter
+
+'iconpickerclose.queryloop': triggered when the icon list is closed. Receives the display mode as parameter.
+
+To subscribe to the events, use
+
+```js
+(function($){
+
+	$body.on('iconselected.queryloop', function(e, icon){
+		console.log('Icon selected: ' + icon);
+	});
+	$body.on('iconpickershow.queryloop', function(e, mode){
+		console.log('Icon picker launched in mode ' + mode);
+	});
+	$body.on('iconpickerclose.queryloop', function(e, mode){
+		console.log('Icon picker in mode ' + mode + ' was closed.');
+	});
+	
+})(jQuery);
+```
