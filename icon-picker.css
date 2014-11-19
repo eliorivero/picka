@@ -214,11 +214,14 @@
 	cursor: pointer;
 	display: inline-block;
 	padding: 5px 7px;
-	margin: 5px 0;
+	margin: 5px 3px 0 0;
 	border: 1px solid #C0C0C0;
 	background: #fff;
 	border-radius: 3px;
 }
 .launch-icons:hover {
 	color: #666
+}
+.rtl .launch-icons{
+	margin: 5px 0 0 3px;
 }
